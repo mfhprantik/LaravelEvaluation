@@ -13,6 +13,7 @@ class CreateProductsTable extends Migration
      */
     public function up()
     {
+        if(!Schema::hasTable('products')){
         Schema::create('products', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('title');
@@ -28,6 +29,7 @@ class CreateProductsTable extends Migration
                   ->on('subcategories')
                   ->onDelete('cascade');
         });
+       }
     }
 
     /**
