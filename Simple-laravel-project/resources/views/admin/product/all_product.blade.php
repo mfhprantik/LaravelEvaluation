@@ -25,7 +25,7 @@
                                 <td>{{$item->title}}</td>
                                 <td>{{$item->price}}</td>
                                 <td>{{$item->subcategory_id}}</td>
-                                <td><a href="{{route('destroy', $item->id)}}">del</a></td>
+                                <td><a class="btn btn-sm btn-danger"  href="{{route('destroy', $item->id)}}">delete</a></td>
                               </tr>
                             @endforeach
                         </tbody>

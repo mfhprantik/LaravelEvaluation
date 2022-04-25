@@ -19,7 +19,7 @@ class ProductController extends Controller
         $product->price = $request->price;
         $product->subcategory_id = $request->subcategory_id;
         $product->save();
-        return redirect()->back();
+        return redirect()->back()->with('success','Successfully Product Added');
     }
 
     public function allProduct(){
@@ -29,6 +29,6 @@ class ProductController extends Controller
     public function deleteProduct($id){
         $singleProduct=Product::find($id);
         $singleProduct->delete();
-        return redirect()->back();
+        return redirect()->back()->with('success','Successfully Product Deleted');
     }
 }
