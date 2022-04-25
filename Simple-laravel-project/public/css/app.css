@@ -11286,3 +11286,14 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+
+
+.sidebar{
+  background: #000;
+  height: 100vh;
+  
+}
+.sidebar .nav-item .nav-link{
+  color: white;
+  font-weight: bold;
+}
