@@ -1,35 +1,76 @@
 @extends('admin.layout.app')
 
 @section('admin_content')
-<div class="container-fluid">
+<div class="container mt-5">
     <div class="row">
-        <div class="col-md-2">
-            <ul class="nav flex-column sidebar">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Dashboard</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Add Product</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Product List</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link ">More Details...</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link ">More Details...</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link ">More Details...</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link ">setting</a>
-                </li>
-              </ul>
+        <div class="col">
+            <div class="row">
+                <div class="col-sm-6">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Special title treatment</h5>
+                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Special title treatment</h5>
+                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
         </div>
-        <div class="col-md-10"></div>
-        
+
+        <div class="col">
+            <div class="row">
+                <div class="col-sm-6">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Special title treatment</h5>
+                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Special title treatment</h5>
+                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+        <div class="col">
+            <div class="row">
+                <div class="col-sm-6">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Special title treatment</h5>
+                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Special title treatment</h5>
+                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
     </div>
 </div>
 @endsection
