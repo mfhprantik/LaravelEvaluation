@@ -19,5 +19,16 @@ class ProductController extends Controller
         $product->price = $request->price;
         $product->subcategory_id = $request->subcategory_id;
         $product->save();
+        return redirect()->back();
+    }
+
+    public function allProduct(){
+        $result=Product::all();
+        return view('admin.product.all_product',compact('result'));
+    }
+    public function deleteProduct($id){
+        $singleProduct=Product::find($id);
+        $singleProduct->delete();
+        return redirect()->back();
     }
 }

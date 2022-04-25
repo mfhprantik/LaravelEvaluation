@@ -85,7 +85,7 @@
                           <a class="nav-link" href="{{route('product.index')}}">Add Product</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#">Product List</a>
+                          <a class="nav-link" href="{{route('all.product')}}">All Product List</a>
                         </li>
                         <li class="nav-item">
                           <a class="nav-link ">More Details...</a>

@@ -26,3 +26,5 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('admin/home', [App\Http\Controllers\AdminHomcontroller::class, 'index'])->name('admin.home')->middleware('isAdmin');
 Route::get('admin/addProduct', [App\Http\Controllers\ProductController::class, 'index'])->name('product.index')->middleware('isAdmin');
 Route::post('admin/postProduct', [App\Http\Controllers\ProductController::class, 'addProduct'])->name('product.add')->middleware('isAdmin');
+Route::get('admin/allProduct', [App\Http\Controllers\ProductController::class, 'allProduct'])->name('all.product')->middleware('isAdmin');
+Route::get('admin/porductDelete/{id}', [App\Http\Controllers\ProductController::class, 'deleteProduct'])->name('destroy')->middleware('isAdmin');
