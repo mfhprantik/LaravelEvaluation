@@ -27,7 +27,7 @@
                         </div>
                         <div class="mb-3">
                           <label class="form-label">thumbnail</label>
-                          <input type="file" class="form-control" >
+                          <input type="file" name="thumbnail" class="form-control" >
                         </div>
                        <div class="text-center">
                         <button type="submit" class="btn btn-primary">Add Product</button>

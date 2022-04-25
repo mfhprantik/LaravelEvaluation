@@ -12,6 +12,7 @@
                         <thead>
                           <tr>
                             <th scope="col">#</th>
+                            <th scope="col">Images</th>
                             <th scope="col">Title</th>
                             <th scope="col">Price</th>
                             <th scope="col">sub category</th>
@@ -22,6 +23,7 @@
                             @foreach ($result as $item)
                             <tr>
                                 <th scope="row">{{$item->id}}</th>
+                                <td><img width="50px" height="50px" src="{{asset($item->thumbnail)}}" alt="NULL"></td>
                                 <td>{{$item->title}}</td>
                                 <td>{{$item->price}}</td>
                                 <td>{{$item->subcategory_id}}</td>
