@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-10">
             <div class="card">
                 <div class="card-header">Product List  (mosharaf111hossain@gmail.com)
                     <a href="/products/create" class="btn btn-warning btn-sm mgl-10px">Create</a>
@@ -35,7 +35,7 @@
                                 @endif
                                </td>
                                 <td>{{$product->title}}</td>
-                                <td>{{$product->description}}</td>
+                                <td>{!!$product->description!!}</td>
                                 <td>{{$product->price}}</td>
                                 <td>{{$product->created_at->diffForHumans()}}</td>
                             

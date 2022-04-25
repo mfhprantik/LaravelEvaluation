@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-10">
             <div class="card">
                 <div class="card-header">{{ __('Product Create  (mosharaf111hossain@gmail.com)') }}</div>
                 <div class="card-body">
@@ -24,8 +24,10 @@
 
                         <div class="form-group">
                             <label for="description">Description</label>
-                            <textarea id="description"  class="form-control @error('description') is-invalid @enderror" 
-                            name="description" placeholder="description" rows="7">
+                            <textarea id="description"  
+                            id="description"
+                            class="form-control @error('description') is-invalid @enderror" 
+                            name="description" placeholder="description" rows="15">
                             </textarea>
                             @error('description')
                                      <span class="invalid-feedback" role="alert">
@@ -101,4 +103,17 @@
         </div>
     </div>
 </div>
+@section('script')
+<script>
+    ClassicEditor
+            .create( document.querySelector( '#description' ) )
+            .then( editor => {
+                    console.log( editor );
+            } )
+            .catch( error => {
+                    console.error( error );
+            } );
+</script>
+@endsection
+
 @endsection

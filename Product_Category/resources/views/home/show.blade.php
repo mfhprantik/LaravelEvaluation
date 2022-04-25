@@ -17,7 +17,7 @@
                     </div>
 
                     <div class="card-body">
-                         <p>{{ $post->body }}</p>
+                         <p>{!! $product->description !!}</p>
                     </div>
 
                     

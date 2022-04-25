@@ -18,6 +18,9 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <script src="https://cdn.ckeditor.com/ckeditor5/34.0.0/classic/ckeditor.js"></script>
+    
+    <link rel="stylesheet" href="{{ asset('style/style.css') }}">
 </head>
 <body>
     <div id="app">
@@ -79,5 +82,6 @@
             @yield('content')
         </main>
     </div>
+    @yield('script')
 </body>
 </html>

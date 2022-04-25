@@ -15,7 +15,7 @@
                         <a href="products/{{$product->id}}" style="text-decoration:none; "> <h3>{{ $product->title }}</h3> </a> 
                     </div>
                     <div class="card-body">
-                         <p>{{ $product->description }}</p>
+                         <p>{!! $product->description !!}</p>
                     </div>
                     <div class="card-body">
                         <p>{{ $product->price }}</p>
