@@ -1,0 +1,5 @@
+composer update
+php artisan migrate/create a DB and upload sql file.
+
+Admin user : admin@admin.com
+Admin Password : 123456
