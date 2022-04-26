@@ -1,5 +1,7 @@
 composer update
-php artisan migrate/create a DB and upload sql file.
+php artisan migrate
+php artisan db:seed
+or create a DB and upload sql file.
 
 Admin user : admin@admin.com
 Admin Password : 123456
